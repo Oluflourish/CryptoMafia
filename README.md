@@ -1,10 +1,11 @@
 Crypto Mafia App
 ===================================
 
-Cryptocurrency, an entity that will control the future's currency.
+Cryptocurrency, an entity that will control the future's currency [Mafia].
 
 The app helps with conversion from Bitcion(BTC) or Etheruem(ETH) to country curriences (and vice versa) using the latest Exchange rates.
 
+Link to App:https://github.com/Oluflourish/CryptoMafia/blob/master/CryptoMafia.apk
 API: CryptoCompare API (https://min-api.cryptocompare.com)
 
 
