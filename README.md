@@ -1,4 +1,4 @@
-Crypto Mafia App  ![ic_launcher](Screenshots/bitcoin_logo.jpg)
+Crypto Mafia App
 ===================================
 
 Cryptocurrency, an entity that will control the future's currency.
