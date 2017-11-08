@@ -5,7 +5,8 @@ Cryptocurrency, an entity that will control the future's currency [Mafia].
 
 The app helps with conversion from Bitcion(BTC) or Etheruem(ETH) to country curriences (and vice versa) using the latest Exchange rates.
 
-Link to App:https://github.com/Oluflourish/CryptoMafia/blob/master/CryptoMafia.apk
+Link to App: https://github.com/Oluflourish/CryptoMafia/blob/master/CryptoMafia.apk
+
 API: CryptoCompare API (https://min-api.cryptocompare.com)
 
 
@@ -17,6 +18,7 @@ Screenshots of the App
 
 #
 
-- Conversion Activity, About Activity, Empty State /No Internet Connection Activity
+- Conversion Acti
+vity, About Activity, Empty State /No Internet Connection Activity
 
 ![Screenshot_2](Screenshots/b.png)
