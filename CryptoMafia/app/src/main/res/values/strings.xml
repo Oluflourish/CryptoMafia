@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Crypto Mafia</string>
+    <string name="title_activity_details">Conversion</string>
+    <string name="conversion_answer">0.0000</string>
+    <string name="convert_to_bitcoin">Convert to Bitcoin</string>
+    <string name="btc_shortcode">BTC</string>
+    <string name="convert_to_ether">Convert to Ethereum</string>
+    <string name="eth_shortcode">ETH</string>
+    <string name="exchange_rates">Exchange Rates</string>
+    <string name="bitcoin">Bitcoin</string>
+    <string name="ether">Ethereum</string>
+
+    <string name="no_internet_connection">No internet connection.\nDouble-check your internet connection, then try again.</string>
+    <string name="something_went_wrong">Hmm…\nSomething went wrong.</string>
+    <string name="retry_button">Try Again</string>
+
+    <string name="about_app">A cryptocurrency calculator. Helps with conversion from Bitcoin (BTC) or Ethereum (ETH) to country currencies and vice versa.</string>
+    <string name="developer_twitter">Developed by @eoluflourish</string>
+    <string name="developer_name">Developed by Olu-Flourish E.S.</string>
+    <string name="app_quote">An entity that will control \nthe future\'s currency</string>
+</resources>

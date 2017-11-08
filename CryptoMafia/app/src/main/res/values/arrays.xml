@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--currency options for dropdown spinner-->
+    <string-array name="array_country_options">
+        <item>Nigeria</item>
+        <item>Bahrain</item>
+        <item>Brazil</item>
+        <item>Britain</item>
+        <item>China</item>
+        <item>EURO</item>
+        <item>Canada</item>
+        <item>Chile</item>
+        <item>India</item>
+        <item>Gibraltar</item>
+        <item>Israel</item>
+        <item>Japan</item>
+        <item>Jordan</item>
+        <item>Kuwait</item>
+        <item>Kenya</item>
+        <item>Mexico</item>
+        <item>Oman</item>
+        <item>Switzerland</item>
+        <item>UAE</item>
+        <item>USA</item>
+    </string-array>
+
+    <string-array name="array_currency_options">
+        <item>NGN</item>
+        <item>BHD</item>
+        <item>BRL</item>
+        <item>GBP</item>
+        <item>CNY</item>
+        <item>EUR</item>
+        <item>CAD</item>
+        <item>CLP</item>
+        <item>INR</item>
+        <item>GLD</item>
+        <item>ILS</item>
+        <item>JPY</item>
+        <item>JOD</item>
+        <item>KWD</item>
+        <item>KES</item>
+        <item>MXN</item>
+        <item>OMR</item>
+        <item>CHF</item>
+        <item>AED</item>
+        <item>USD</item>
+    </string-array>
+
+</resources>

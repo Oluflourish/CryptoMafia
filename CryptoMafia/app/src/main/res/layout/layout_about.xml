@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="10dp"
+        android:src="@drawable/bitcoin_logo"
+        android:contentDescription="@null"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="@string/app_name"
+        android:layout_below="@+id/logo"
+        android:textSize="30sp"
+        android:paddingBottom="10dp"
+        android:gravity="center_horizontal"/>
+
+
+    <TextView
+        android:id="@+id/name_2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="@string/about_app"
+        android:layout_below="@+id/name"
+        android:textSize="16sp"
+        android:paddingBottom="10dp"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/about_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="@string/developer_name"
+        android:layout_below="@+id/name_2"
+        android:textSize="16sp"
+        android:paddingLeft="5dp"
+        android:paddingStart="5dp"
+        android:paddingRight="5dp"
+        android:paddingEnd="5dp"
+        android:paddingBottom="5dp"
+        android:gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/dialogButtonOK"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CLOSE"
+        android:layout_marginTop="20dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/about_text"
+        android:layout_marginBottom="10dp"
+        />
+
+</RelativeLayout>
+

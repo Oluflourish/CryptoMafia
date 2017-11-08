@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.flourish.cryptomafia.activities.ConversionActivity"
+    tools:showIn="@layout/activity_conversion">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/flag_thumbnail"
+            android:layout_width="170dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/flag_nigeria" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/exchange_rates"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bitcoin"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorAccent" />
+
+                <TextView
+                    android:id="@+id/btc_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:text="10000.00" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ether"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorAccent" />
+
+                <TextView
+                    android:id="@+id/eth_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    tools:text="10000.00" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            app:cardCornerRadius="4dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_gradient"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/btc_conversion_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/convert_to_bitcoin"
+                    android:textAllCaps="true"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:columnCount="3"
+                    android:rowCount="3">
+
+                    <TextView
+                        android:id="@+id/btc_country_shortcode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="#fff"
+                        android:textSize="20sp"
+                        tools:text="NGN" />
+
+                    <EditText
+                        android:id="@+id/btc_input"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/white"
+                        android:ems="10"
+                        android:hint="Enter value"
+                        android:inputType="numberDecimal"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/input_register"
+                        android:textColorHint="@color/input_register_hint" />
+
+
+                    <Button
+                        android:id="@+id/btc_currency_swap"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_swap" />
+
+                    <TextView
+                        android:id="@+id/btc_currency_shortcode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3dp"
+                        android:text="@string/btc_shortcode"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/btc_conversion_result"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnSpan="2"
+                        android:layout_gravity="start|top"
+                        android:layout_rowSpan="2"
+                        android:gravity="fill"
+                        android:maxWidth="200dp"
+                        android:text="@string/conversion_answer"
+                        android:textColor="#fff"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                </GridLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/input_register_bg"
+            app:cardCornerRadius="4dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_gradient2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/crdEth_conversionTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="@string/convert_to_ether"
+                    android:textAllCaps="true"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:columnCount="3"
+                    android:rowCount="2">
+
+                    <TextView
+                        android:id="@+id/eth_country_shortcode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center_vertical"
+                        android:textColor="#fff"
+                        android:textSize="20sp"
+                        tools:text="NGN" />
+
+
+                    <EditText
+                        android:id="@+id/eth_input"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:background="@color/white"
+                        android:ems="10"
+                        android:hint="Enter value"
+                        android:inputType="numberDecimal"
+                        android:padding="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/input_register"
+                        android:textColorHint="@color/input_register_hint" />
+
+                    <Button
+                        android:id="@+id/crdEth_BtnViceVersa"
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_swap" />
+
+                    <TextView
+                        android:id="@+id/eth_currency_shortcode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="3dp"
+                        android:text="@string/eth_shortcode"
+                        android:textColor="#fff"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/eth_conversion_result"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_columnSpan="2"
+                        android:layout_gravity="start|top"
+                        android:layout_rowSpan="2"
+                        android:gravity="fill"
+                        android:maxWidth="200dp"
+                        android:text="@string/conversion_answer"
+                        android:textColor="@color/white"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                </GridLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</LinearLayout>

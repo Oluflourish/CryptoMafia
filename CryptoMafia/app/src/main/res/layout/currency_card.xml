@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/card_margin"
+        android:elevation="3dp"
+        card_view:cardCornerRadius="@dimen/card_album_radius">
+
+        <RelativeLayout
+            android:id="@+id/rl_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/iv_flag"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/album_cover_height"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                tools:src="@drawable/flag_nigeria" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_flag"
+                android:layout_centerHorizontal="true"
+                android:background="#010"
+                android:paddingBottom="5dp"
+                android:paddingLeft="@dimen/album_title_padding"
+                android:paddingRight="@dimen/album_title_padding"
+                android:paddingTop="5dp"
+                android:textAllCaps="true"
+                android:textColor="#fff"
+                android:textSize="@dimen/album_title"
+                tools:text="Name of Country" />
+
+            <LinearLayout
+                android:id="@+id/btcprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/album_title_padding"
+                    android:paddingRight="@dimen/album_title_padding"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:text="BTC: " />
+
+                <TextView
+                    android:id="@+id/tv_btcPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/album_title_padding"
+                    android:paddingRight="@dimen/album_title_padding"
+                    android:textSize="13sp"
+                    tools:text="1000.00" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ethprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btcprice"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/album_title_padding"
+                    android:paddingRight="@dimen/album_title_padding"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:text="ETH: " />
+
+                <TextView
+                    android:id="@+id/tv_ethPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/album_title_padding"
+                    android:paddingRight="@dimen/album_title_padding"
+                    android:textSize="13sp"
+                    tools:text="1000.00" />
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/overflow"
+                android:layout_width="@dimen/ic_album_overflow_width"
+                android:layout_height="@dimen/ic_album_overflow_height"
+                android:layout_alignBaseline="@id/ethprice"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/ic_album_overflow_margin_top"
+                android:baselineAlignBottom="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_dots" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

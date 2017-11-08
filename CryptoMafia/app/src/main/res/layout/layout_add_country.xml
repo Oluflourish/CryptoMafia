@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="0dp"
+        android:paddingStart="0dp"
+        android:paddingRight="0dp"
+        android:paddingEnd="0dp"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/fullname_text"
+            style="@style/spinner_style"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:drawSelectorOnTop="true">
+        </Spinner>
+
+    </LinearLayout>
+
+</LinearLayout>
